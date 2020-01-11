@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>待付款</title>
+    <!-- <link rel="stylesheet" href="../css/jiesuan.css"> -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/headfooter.css">
+    <link rel="stylesheet" href="../css/commoLeft.css">
+    <link rel="stylesheet" href="../css/notPaid.css">
+</head>
+
+<body>
+    <!-- 头部导航条 -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- logo和折叠按钮 -->
+            <div class="navbar-header">
+                <div class="slogan">
+                    联系我们
+                </div>
+            </div>
+
+            <div class="navbar-right">
+                <!-- 折叠按钮 -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- 缩小之后会被折叠的元素 -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul style="color: #fff;">
+                        <li>
+                                <a href="shoppCart.html">购物车</a>
+                        </li>
+                        <li>
+                            <a href="./src/register.html">订单</a>|
+                        </li>
+                        <li>
+                            <a href="" data-toggle="modal" data-target="#myModal">XMM888</a>|
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="container-fluid">
+                <div class="head listHead col-lg-10  col-md-10  col-sm-10 ">
+                    <h1><a href="../index.html">XMM</a></h1>
+                    <div class="head-input">
+                        <span class="cur">站内</span>
+                        <span>站外</span>
+                        <input type="text" placeholder="请输入内容">
+                        <a href=""><img src="./images/sousuo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="store listStore">
+                    <a href="shoppCart.html">
+                        <img src="../images/store.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- 模态框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">标题</h4>
+                </div>
+                <div class="modal-body">
+                    内容
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭按钮</button>
+                    <button type="button" class="btn btn-primary">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="lists">
+            <div class="listLeft">
+                <p>列表</p>
+                <span></span>
+                <ul>
+                        <li class="first">
+                                <div class="photo">
+                                    <img src="../images/touxiang.jpg" alt="">
+                                </div>
+                                <div class="username">
+                                    您好 , 巅峰召唤师
+                                </div>
+                                <div class="type">
+                                    <div>
+                                        <h4>2</h4>
+                                        <p>待付款</p>
+                                    </div>
+                                    <div>
+                                        <h4>0</h4>
+                                        <p>处理中</p>
+                                    </div>
+                                    <div>
+                                        <h4>0</h4>
+                                        <p>待收货</p>
+                                    </div>
+                                    <div>
+                                        <h4>0</h4>
+                                        <p>待评价</p>
+                                    </div>
+                                </div>
+                                <div class="screen">
+                                        <marquee scrollamount="5"><div class="marquee">圣诞节快乐! 圣诞节快乐! 圣诞节快乐! </div></marquee>
+                                </div>
+                            </li>
+                        <li><a href="list.html">个人信息</a></li>
+                        <li><a href="shoppCart.html">购物车</a></li>
+                        <li><a href="order.html">订购清单</a></li>
+                        <li><a href="notPaid.html">待付款</a></li>
+                        <li><a href="inHend.html">处理中</a></li>
+                        <li><a href="loading.html">查看商品实图</a></li>
+                        <li class="indeterminate ref"><a style=" color: #F38420;" href="notPaidTwo.html">二次付款通知</a></li>
+                        <li><a href="inTransit.html">产品运输中</a></li>
+                        <li><a href="ofGoods.html">待收货</a></li>
+                        <li><a href="over.html">完成订单</a></li>
+                        <li><a href="off.html">取消订单</a></li>
+                </ul>
+            </div>
+            <div class="listRight cart">
+                    <div class="span"></div>
+                <div class="cartCenter">
+                    <div class="main">
+                        <div class="main-top">
+                            <div class="top-left">
+                                <p>订单号:21465321318818</p>
+                            </div>
+                            <div class="top-right">
+                                <ul>
+                                    <li style="width: 50%;">状态:待二次付款</li>
+                                    <li style="width: 50%;">下单时间:2019-12-23 10:43</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-top" style="background: #fff;">
+                                <div class="top-left">
+                                    <p>选择</p>
+                                    <p>商品信息</p>
+                                </div>
+                                <div class="top-right">
+                                    <ul>
+                                        <li>规格</li>
+                                        <li>单价</li>
+                                        <li>数量</li>
+                                        <li>总价</li>
+                                        <li>删除</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <div id="store" class="store">
+                            <div class="store-bottom">
+                                <div class="s-b-left">
+                                   
+                                    <img src="../images/yht-logo-195X80.png" alt="">
+                                    <div class="tle">
+                                        <p>
+                                            欧塞洛斯 欧式全铜吊灯客厅卧室餐厅灯具灯饰
+                                        </p>
+                                        <p>
+                                            颜色:6头
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="s-b-right">
+                                        <div class="box1">
+                                                <span>XXL</span>  
+                                            </div>
+                                            <div class="box2">
+                                                <span>459.00</span>
+                                            </div>
+                                            <div class="box3">
+                                                <span>1</span>
+                                            </div>
+                                            <div class="box4">
+                                                <span>459.00</span>
+                                            </div>
+                                    <div class="box5">
+                                        <img src="../images/del.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer3">
+                                <div class="footer-right">
+                                        <div class="youfei">
+                                                邮费+ : 28.2
+                                        </div>
+                                    <div>
+                                        <p>合计:
+                                            <span>￥</span>
+                                            <span id="total">459.00</span>
+                                        </p>
+                                        <br>
+                                    </div>
+                                </div>
+                                <a href="payTwo.html">去付款</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer footer2">
+            <ul>
+                <li><a>服务协议</a></li>
+                <li><a>服务协议</a></li>
+                <li><a>服务协议</a></li>
+                <li><a>服务协议</a></li>
+                <li><a>服务协议</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../js/jquery-1.12.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+         $(".head-input span").click(function(){
+            $(this).addClass("cur").siblings().removeClass("cur")
+        })
+    </script>
+</body>
+
+</html>

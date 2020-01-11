@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/headfooter.css">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hotshop.css">
+    <link rel="stylesheet" href="css/register.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!-- 头部导航条 -->
+    <nav class="navbar navbar-default">
+        
+        <div class="container">
+            <!-- logo和折叠按钮 -->
+            <div class="navbar-header">
+                <div class="slogan">
+                    <span>首页&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>联系我们</span>
+                    <div class="hint">
+                        <ul>
+                            <li>电话 : 010-882161623</li>
+                            <li>地址 : 广州市越秀区花柱官方混合双打时间54564654654</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-right">
+                <!-- 折叠按钮 -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- 缩小之后会被折叠的元素 -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul>
+                        <li>
+                            <a href="" data-toggle="modal" id="login" data-target="#myModal">登陆</a>
+                        </li>
+                        <li>
+                            <a href="" data-toggle="modal" data-target="#myModal2">注册</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+            <div class="container-fluid">
+                <div class="head col-lg-10  col-md-10  col-sm-10 ">
+                    <h1>XMM</h1>
+                    <div class="head-input">
+                        <span class="cur">站内</span>
+                        <span>站外</span>
+                        <input type="text" placeholder="请输入内容">
+                        <a href=""><img src="./images/sousuo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="store">
+                    <a href="./src/shoppCart.html">
+                        <img src="./images/store.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- 登录模态框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="register">
+            <div class="mains">
+                <div class="registerHead">
+                    XMM
+                    <span>用户登录</span>
+                </div>
+                <div class="registerCenter">
+                    <div class="registerTle loginTle">
+                        <span></span>
+                        <span></span>
+                        <div class="regFont passFont loginFont">
+                            <h1>STEP&nbsp;03</h1>
+                            <p>●&nbsp;密码最少6位最多20位</p>
+                            <p>●&nbsp;密码只能是英文大写/小写/数字</p>
+                            <p>●&nbsp;请妥善保管您的密码</p>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <h1>用户登录</h1>
+                        <div class="type">+66&nbsp;|&nbsp;<input id="phone" type="text" placeholder="请输入手机号"></div>
+                        <div class="type"><input type="text" id="pass" placeholder="请输入密码"></div>
+                        <div class="back passBack">
+                            <input id="loginCheck" type="checkbox">我已阅读并同意<strong
+                                style="color: #F38420;">Vcanbuy用户条款</strong>,点击"登录"按钮即表示您
+                            已阅读并同意Vcanbuy用户条款。</div>
+                        <button id="loginBtn" class="regBtn">登录</button>
+                        <!-- onclick="location.href='list.html'" -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 注册模态框 -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role2="dialog" aria-labelledby="myModalLabel">
+        <div class="register" id="register">
+            <div class="mains">
+                <div class="registerHead">
+                    XMM
+                    <span>用户注册</span>
+                </div>
+                <div class="registerCenter">
+                    <div class="registerTle">
+                        <span></span>
+                        <span></span>
+                        <div class="regFont">
+                            <h1>STEP&nbsp;01</h1>
+                            <p>请使用未注册过的邮箱进行注册</p>
+                            <p>点击发送验证码并输入4位数字验证码</p>
+                            <p>验证码10分钟有效</p>
+                            <p>60秒后可对用一邮箱发送第二次验证码</p>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <h1>验证手机号</h1>
+                        <div class="type" id="verify">+66&nbsp;|&nbsp;<input type="text"
+                                placeholder="请输入手机号码"><span>发送验证码</span></div>
+                        <div class="type"><input class="code" type="text" placeholder="请输入4位数字验证码"></div>
+                        <button id="nextBtn"><a>下一步</a></button>
+                        <div class="back" id="backBtnIdx"><span></span>已有账号,返回登录</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="register" id="setPassword" style="display: none;">
+            <div class="mains">
+                <div class="registerHead">
+                    XMM
+                    <span>用户注册</span>
+                </div>
+                <div class="registerCenter">
+                    <div class="registerTle">
+                        <span></span>
+                        <span></span>
+                        <div class="regFont passFont">
+                            <h1>STEP&nbsp;02</h1>
+                            <p>●&nbsp;密码最少6位最多20位</p>
+                            <p>●&nbsp;密码只能是英文大写/小写/数字</p>
+                            <p>●&nbsp;请妥善保管您的密码</p>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <h1>设置密码</h1>
+                        <p>手机号:66-0958803575</p>
+                        <div class="type"><input type="text" placeholder="请输入密码"></div>
+                        <div class="type"><input type="text" placeholder="请再次输入密码"></div>
+                        <div class="back passBack">
+                            <input type="checkbox">我已阅读并同意<strong
+                                style="color: #F38420;">Vcanbuy用户条款</strong>,点击"注册"按钮即表示您
+                            已阅读并同意Vcanbuy用户条款。</div>
+                        <button class="regBtn">注册</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 模态框 -->
+    <nav class="zh-middle">
+        <div class="nav-body container">
+            <div class="left">
+                <div id="ulLeft" class="ulLeft cargory_two">
+                    <div class="cargory_three">
+                        <div class="tle"> 男士时54545646545尚</div>
+                        <div class="suble">
+                            <div class="banner">
+                                <img src="./images/banner.jpg" alt="">
+                            </div>
+                            <ul>
+                                <li>男装</li>
+                                <li>男士流行服装(韩版男装夏季)</li>
+                                <li>男士T恤(T恤男)</li>
+                                <li>男士衬衫(衬衫男)</li>
+                                <li>男士西装(西装男)</li>
+                                <li>男士领带</li>
+                                <li>男士短裤(短裤男)</li>
+                                <li>男士内裤(内裤男)</li>
+                                <li>男士运动服(运动服男)</li>
+                                <li>男士泳装</li>
+                            </ul>
+                            <ul>
+                                <li>男鞋</li>
+                                <li>男士袜子</li>
+                                <li>男士皮鞋</li>
+                                <li>男士低帮鞋</li>
+                                <li>男士高帮鞋</li>
+                                <li>男士运动鞋</li>
+                                <li>男士凉鞋</li>
+                            </ul>
+                            <ul>
+                                <li>男包</li>
+                                <li>男士背包</li>
+                                <li>男士斜挎包</li>
+                                <li>男士单肩包</li>
+                                <li>男士商务包</li>
+                                <li>男士旅行包</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cargory_three">
+                        <div class="tle"> 男士时sssssssssssssssssss尚</div>
+                        <div class="suble">
+                            <div class="banner">
+                                <img src="./images/banner.jpg" alt="">
+                            </div>
+                            <ul>
+                                <li>男装</li>
+                                <li>男士流行服装(韩版男装夏季)</li>
+                                <li>男士T恤(T恤男)</li>
+                                <li>男士衬衫(衬衫男)</li>
+                                <li>男士西装(西装男)</li>
+                                <li>男士领带</li>
+                                <li>男士短裤(短裤男)</li>
+                                <li>男士内裤(内裤男)</li>
+                                <li>男士运动服(运动服男)</li>
+                                <li>男士泳装</li>
+                            </ul>
+                            <ul>
+                                <li>男鞋</li>
+                                <li>男士袜子</li>
+                                <li>男士皮鞋</li>
+                                <li>男士低帮鞋</li>
+                                <li>男士高帮鞋</li>
+                                <li>男士运动鞋</li>
+                                <li>男士凉鞋</li>
+                            </ul>
+                            <ul>
+                                <li>男包</li>
+                                <li>男士背包</li>
+                                <li>男士斜挎包</li>
+                                <li>男士单肩包</li>
+                                <li>男士商务包</li>
+                                <li>男士旅行包</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cargory_three">
+                        <div class="tle"> 男士时尚</div>
+                        <div class="suble">
+                            <ul>
+                                <li>男装</li>
+                                <li>男士流行服装(韩版男装夏季)</li>
+                                <li>男士T恤(T恤男)</li>
+                                <li>男士衬衫(衬衫男)</li>
+                                <li>男士西装(西装男)</li>
+                                <li>男士领带</li>
+                                <li>男士短裤(短裤男)</li>
+                                <li>男士内裤(内裤男)</li>
+                                <li>男士运动服(运动服男)</li>
+                                <li>男士泳装</li>
+                            </ul>
+                            <ul>
+                                <li>男鞋</li>
+                                <li>男士袜子</li>
+                                <li>男士皮鞋</li>
+                                <li>男士低帮鞋</li>
+                                <li>男士高帮鞋</li>
+                                <li>男士运动鞋</li>
+                                <li>男士凉鞋</li>
+                            </ul>
+                            <ul>
+                                <li>男包</li>
+                                <li>男士背包</li>
+                                <li>男士斜挎包</li>
+                                <li>男士单肩包</li>
+                                <li>男士商务包</li>
+                                <li>男士旅行包</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cargory_three">
+                        <div class="tle"> 男士时尚</div>
+                        <div class="suble">
+                            <ul>
+                                <li>男装4</li>
+                                <li>男士流行服装(韩版男装夏季)</li>
+                                <li>男士T恤(T恤男)</li>
+                                <li>男士衬衫(衬衫男)</li>
+                                <li>男士西装(西装男)</li>
+                                <li>男士领带</li>
+                                <li>男士短裤(短裤男)</li>
+                                <li>男士内裤(内裤男)</li>
+                                <li>男士运动服(运动服男)</li>
+                                <li>男士泳装</li>
+                            </ul>
+                            <ul>
+                                <li>男鞋</li>
+                                <li>男士袜子</li>
+                                <li>男士皮鞋</li>
+                                <li>男士低帮鞋</li>
+                                <li>男士高帮鞋</li>
+                                <li>男士运动鞋</li>
+                                <li>男士凉鞋</li>
+                            </ul>
+                            <ul>
+                                <li>男包</li>
+                                <li>男士背包</li>
+                                <li>男士斜挎包</li>
+                                <li>男士单肩包</li>
+                                <li>男士商务包</li>
+                                <li>男士旅行包</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cargory_three">
+                        <div class="tle"> 男士时尚</div>
+                        <div class="suble">
+                            <ul>
+                                <li>男装5</li>
+                                <li>男士流行服装(韩版男装夏季)</li>
+                                <li>男士T恤(T恤男)</li>
+                                <li>男士衬衫(衬衫男)</li>
+                                <li>男士西装(西装男)</li>
+                                <li>男士领带</li>
+                                <li>男士短裤(短裤男)</li>
+                                <li>男士内裤(内裤男)</li>
+                                <li>男士运动服(运动服男)</li>
+                                <li>男士泳装</li>
+                            </ul>
+                            <ul>
+                                <li>男鞋</li>
+                                <li>男士袜子</li>
+                                <li>男士皮鞋</li>
+                                <li>男士低帮鞋</li>
+                                <li>男士高帮鞋</li>
+                                <li>男士运动鞋</li>
+                                <li>男士凉鞋</li>
+                            </ul>
+                            <ul>
+                                <li>男包</li>
+                                <li>男士背包</li>
+                                <li>男士斜挎包</li>
+                                <li>男士单肩包</li>
+                                <li>男士商务包</li>
+                                <li>男士旅行包</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cargory_three cur">
+                        <div class="tle"> 男士时尚</div>
+                        <div class="suble">
+                            <ul>
+                                <li>男装6</li>
+                                <li>男士流行服装(韩版男装夏季)</li>
+                                <li>男士T恤(T恤男)</li>
+                                <li>男士衬衫(衬衫男)</li>
+                                <li>男士西装(西装男)</li>
+                                <li>男士领带</li>
+                                <li>男士短裤(短裤男)</li>
+                                <li>男士内裤(内裤男)</li>
+                                <li>男士运动服(运动服男)</li>
+                                <li>男士泳装</li>
+                            </ul>
+                            <ul>
+                                <li>男鞋</li>
+                                <li>男士袜子</li>
+                                <li>男士皮鞋</li>
+                                <li>男士低帮鞋</li>
+                                <li>男士高帮鞋</li>
+                                <li>男士运动鞋</li>
+                                <li>男士凉鞋</li>
+                            </ul>
+                            <ul>
+                                <li>男包</li>
+                                <li>男士背包</li>
+                                <li>男士斜挎包</li>
+                                <li>男士单肩包</li>
+                                <li>男士商务包</li>
+                                <li>男士旅行包</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <section class="pc-banner">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-center none-effect">
+                                <a href="#">
+                                    <img src="./images/banner1.jpg">
+                                </a>
+                                <div class="layer-mask"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="./images/banner2.jpg">
+                                </a>
+                                <div class="layer-mask"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="./images/banner3.jpg">
+                                </a>
+                                <div class="layer-mask"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="./images/banner4.jpg">
+                                </a>
+                                <div class="layer-mask"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="./images/banner5.jpg>">
+                                </a>
+                                <div class="layer-mask"></div>
+                            </div>
+                        </div>
+                        <!-- <div class="button">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div> -->
+                        <div class="button">
+                            <ul class="swiper-pagination">
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="right">
+                <div class="ulRight cargory_two">
+                    <div class="cargory_three">
+
+                        <div class="tle"> 男士时尚</div>
+                        <div class="suble2">
+                            <div class="banner">
+                                <img src="./images/banner.jpg" alt="">
+                            </div>
+                            <ul>
+                                <li>男装</li>
+                                <li>男士流行服装(韩版男装夏季)</li>
+                                <li>男士T恤(T恤男)</li>
+                                <li>男士衬衫(衬衫男)</li>
+                                <li>男士西装(西装男)</li>
+                                <li>男士领带</li>
+                                <li>男士短裤(短裤男)</li>
+                                <li>男士内裤(内裤男)</li>
+                                <li>男士运动服(运动服男)</li>
+                                <li>男士泳装</li>
+                            </ul>
+                            <ul>
+                                <li>男鞋</li>
+                                <li>男士袜子</li>
+                                <li>男士皮鞋</li>
+                                <li>男士低帮鞋</li>
+                                <li>男士高帮鞋</li>
+                                <li>男士运动鞋</li>
+                                <li>男士凉鞋</li>
+                            </ul>
+                            <ul>
+                                <li>男包</li>
+                                <li>男士背包</li>
+                                <li>男士斜挎包</li>
+                                <li>男士单肩包</li>
+                                <li>男士商务包</li>
+                                <li>男士旅行包</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="cargory_three">
+
+                        <div class="tle"> 男士时尚</div>
+                        <div class="suble2">
+                            <ul>
+                                <li>男装</li>
+                                <li>男士流行服装(韩版男装夏季)</li>
+                                <li>男士T恤(T恤男)</li>
+                                <li>男士衬衫(衬衫男)</li>
+                                <li>男士西装(西装男)</li>
+                                <li>男士领带</li>
+                                <li>男士短裤(短裤男)</li>
+                                <li>男士内裤(内裤男)</li>
+                                <li>男士运动服(运动服男)</li>
+                                <li>男士泳装</li>
+                            </ul>
+                            <ul>
+                                <li>男鞋</li>
+                                <li>男士袜子</li>
+                                <li>男士皮鞋</li>
+                                <li>男士低帮鞋</li>
+                                <li>男士高帮鞋</li>
+                                <li>男士运动鞋</li>
+                                <li>男士凉鞋</li>
+                            </ul>
+                            <ul>
+                                <li>男包</li>
+                                <li>男士背包</li>
+                                <li>男士斜挎包</li>
+                                <li>男士单肩包</li>
+                                <li>男士商务包</li>
+                                <li>男士旅行包</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="cargory_three">
+
+                        <div class="tle"> 男士时尚</div>
+                        <div class="suble2">
+                            <ul>
+                                <li>男装</li>
+                                <li>男士流行服装(韩版男装夏季)</li>
+                                <li>男士T恤(T恤男)</li>
+                                <li>男士衬衫(衬衫男)</li>
+                                <li>男士西装(西装男)</li>
+                                <li>男士领带</li>
+                                <li>男士短裤(短裤男)</li>
+                                <li>男士内裤(内裤男)</li>
+                                <li>男士运动服(运动服男)</li>
+                                <li>男士泳装</li>
+                            </ul>
+                            <ul>
+                                <li>男鞋</li>
+                                <li>男士袜子</li>
+                                <li>男士皮鞋</li>
+                                <li>男士低帮鞋</li>
+                                <li>男士高帮鞋</li>
+                                <li>男士运动鞋</li>
+                                <li>男士凉鞋</li>
+                            </ul>
+                            <ul>
+                                <li>男包</li>
+                                <li>男士背包</li>
+                                <li>男士斜挎包</li>
+                                <li>男士单肩包</li>
+                                <li>男士商务包</li>
+                                <li>男士旅行包</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="cargory_three">
+
+                        <div class="tle"> 男士时尚</div>
+                        <div class="suble2">
+                            <ul>
+                                <li>男装9</li>
+                                <li>男士流行服装(韩版男装夏季)</li>
+                                <li>男士T恤(T恤男)</li>
+                                <li>男士衬衫(衬衫男)</li>
+                                <li>男士西装(西装男)</li>
+                                <li>男士领带</li>
+                                <li>男士短裤(短裤男)</li>
+                                <li>男士内裤(内裤男)</li>
+                                <li>男士运动服(运动服男)</li>
+                                <li>男士泳装</li>
+                            </ul>
+                            <ul>
+                                <li>男鞋</li>
+                                <li>男士袜子</li>
+                                <li>男士皮鞋</li>
+                                <li>男士低帮鞋</li>
+                                <li>男士高帮鞋</li>
+                                <li>男士运动鞋</li>
+                                <li>男士凉鞋</li>
+                            </ul>
+                            <ul>
+                                <li>男包</li>
+                                <li>男士背包</li>
+                                <li>男士斜挎包</li>
+                                <li>男士单肩包</li>
+                                <li>男士商务包</li>
+                                <li>男士旅行包</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="cargory_three ">
+
+                        <div class="tle"> 男士时尚</div>
+                        <div class="suble2">
+                            <ul>
+                                <li>男装</li>
+                                <li>男士流行服装(韩版男装夏季)</li>
+                                <li>男士T恤(T恤男)</li>
+                                <li>男士衬衫(衬衫男)</li>
+                                <li>男士西装(西装男)</li>
+                                <li>男士领带</li>
+                                <li>男士短裤(短裤男)</li>
+                                <li>男士内裤(内裤男)</li>
+                                <li>男士运动服(运动服男)</li>
+                                <li>男士泳装</li>
+                            </ul>
+                            <ul>
+                                <li>男鞋</li>
+                                <li>男士袜子</li>
+                                <li>男士皮鞋</li>
+                                <li>男士低帮鞋</li>
+                                <li>男士高帮鞋</li>
+                                <li>男士运动鞋</li>
+                                <li>男士凉鞋</li>
+                            </ul>
+                            <ul>
+                                <li>男包</li>
+                                <li>男士背包</li>
+                                <li>男士斜挎包</li>
+                                <li>男士单肩包</li>
+                                <li>男士商务包</li>
+                                <li>男士旅行包</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="cargory_three cur">
+
+                        <div class="tle"> 男士时尚</div>
+                        <div class="suble2">
+                            <ul>
+                                <li>男装mo</li>
+                                <li>男士流行服装(韩版男装夏季)</li>
+                                <li>男士T恤(T恤男)</li>
+                                <li>男士衬衫(衬衫男)</li>
+                                <li>男士西装(西装男)</li>
+                                <li>男士领带</li>
+                                <li>男士短裤(短裤男)</li>
+                                <li>男士内裤(内裤男)</li>
+                                <li>男士运动服(运动服男)</li>
+                                <li>男士泳装</li>
+                            </ul>
+                            <ul>
+                                <li>男鞋</li>
+                                <li>男士袜子</li>
+                                <li>男士皮鞋</li>
+                                <li>男士低帮鞋</li>
+                                <li>男士高帮鞋</li>
+                                <li>男士运动鞋</li>
+                                <li>男士凉鞋</li>
+                            </ul>
+                            <ul>
+                                <li>男包</li>
+                                <li>男士背包</li>
+                                <li>男士斜挎包</li>
+                                <li>男士单肩包</li>
+                                <li>男士商务包</li>
+                                <li>男士旅行包</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="main" id="buying">
+        <div class="container_head"> GROUP BUYING</div>
+        <div class="container">
+            <div class="buying jiantou">
+
+            </div>
+            <div class="commoHot">
+                <ul style="left: 0;">
+                    <li class="col-lg-2 col-md-2  col-sm-2">
+                        <a href=""><img src="./images/image/1.jpg" alt=""></a>
+                        <p>
+                            <span>$ 199</span>
+                            <span>优惠69%</span>
+                        </p>
+                    </li>
+                    <li class="col-lg-2 col-md-2  col-sm-2">
+                        <a href=""><img src="./images/image/2.jpg" alt=""></a>
+                        <p>
+                            <span>$ 299</span>
+                            <span>优惠69%</span>
+                        </p>
+                    </li>
+                    <li class="col-lg-2 col-md-2  col-sm-2">
+                        <a href=""><img src="./images/image/3.jpg" alt=""></a>
+                        <p>
+                            <span>$ 399</span>
+                            <span>优惠69%</span>
+                        </p>
+                    </li>
+                    <li class="col-lg-2 col-md-2  col-sm-2">
+                        <a href=""><img src="./images/image/4.jpg" alt=""></a>
+                        <p>
+                            <span>$ 499</span>
+                            <span>优惠69%</span>
+                        </p>
+                    </li>
+                    <li class="col-lg-2 col-md-2  col-sm-2">
+                        <a href=""><img src="./images/image/5.jpg" alt=""></a>
+                        <p>
+                            <span>$ 599</span>
+                            <span>优惠69%</span>
+                        </p>
+                    </li>
+                    <li class="col-lg-2 col-md-2  col-sm-2">
+                        <a href=""><img src="./images/image/6.jpg" alt=""></a>
+                        <p>
+                            <span>$ 699</span>
+                            <span>优惠69%</span>
+                        </p>
+                    </li>
+                    <li class="col-lg-2 col-md-2  col-sm-2">
+                        <a href=""><img src="./images/image/7.jpg" alt=""></a>
+                        <p>
+                            <span>$ 799</span>
+                            <span>优惠69%</span>
+                        </p>
+                    </li>
+                    <li class="col-lg-2 col-md-2  col-sm-2">
+                        <a href=""><img src="./images/image/8.jpg" alt=""></a>
+                        <p>
+                            <span>$ 899</span>
+                            <span>优惠69%</span>
+                        </p>
+                    </li>
+                    <li class="col-lg-2 col-md-2  col-sm-2">
+                        <a href=""></a>
+                        <p>
+                            <span>$ 999</span>
+                            <span>优惠69%</span>
+                        </p>
+                    </li>
+                    <li class="col-lg-2 col-md-2  col-sm-2">
+                        <a href=""></a>
+                        <p>
+                            <span>$ 0999</span>
+                            <span>优惠69%</span>
+                        </p>
+                    </li>
+                    <li class="col-lg-2 col-md-2  col-sm-2">
+                        <a href=""></a>
+                        <p>
+                            <span>$ 1999</span>
+                            <span>优惠69%</span>
+                        </p>
+                    </li>
+                    <li class="col-lg-2 col-md-2  col-sm-2">
+                        <a href=""></a>
+                        <p>
+                            <span>$ 2999</span>
+                            <span>优惠69%</span>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="commoLeft" class="left jiantou"></div>
+        </div>
+    </section>
+    <div class="hotTle">推荐热卖</div>
+    <section>
+        <div class="hotShop">
+            <div class="hotleft">
+                <h1>男士时尚</h1>
+            </div>
+            <!-- <div class="box"></div> -->
+            <div class="hotright">
+                <div class="box"></div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfdsssssssssssssssssssssssssssssss</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods cur">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods cur">
+                    <div class="goodsImg"><img src="./images/banner.jpg" alt=""></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfsssssssssssssssssssssds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="hotShop">
+            <div class="hotleft">
+                <h1>男士时尚</h1>
+            </div>
+            <div class="hotright">
+                <div class="box"></div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods cur">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods cur">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="hotShop">
+            <div class="hotleft">
+                <h1>男士时尚</h1>
+            </div>
+            <div class="hotright">
+                <div class="box"></div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods cur">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods cur">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="hotShop">
+            <div class="hotleft">
+                <h1>男士时尚</h1>
+            </div>
+            <div class="hotright">
+                <div class="box"></div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods cur">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods cur">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="hotShop">
+            <div class="hotleft">
+                <h1>男士时尚</h1>
+            </div>
+            <div class="hotright">
+                <div class="box"></div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods cur">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods cur">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+                <div class="goods">
+                    <div class="goodsImg"></div>
+                    <p>dksjfkdsjfkjsdkfljdskjlkjsaddddklfds</p>
+                    <div class="pay">199&nbsp;THB</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a>服务协议</a></li>
+                <li><a>服务协议</a></li>
+                <li><a>服务协议</a></li>
+                <li><a>服务协议</a></li>
+                <li><a>服务协议</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var swiper = new Swiper('.swiper-container', {
+                autoplay: true,
+                speed: 3000,
+                autoplayDisableOnInteraction: false,
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 1,
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                prevButton: '.swiper-button-prev',
+                nextButton: '.swiper-button-next',
+                onInit: function (swiper) {
+                    swiper.slides[2].className = "swiper-slide swiper-slide-active";
+                }
+            });
+        }
+        $(".head-input span").click(function () {
+            $(this).addClass("cur").siblings().removeClass("cur")
+        })
+    </script>
+</body>
+
+</html>

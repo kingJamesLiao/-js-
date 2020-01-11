@@ -1,0 +1,231 @@
+
+		#container{
+			width: 100%;
+			background-color: #ffffff;
+			margin: 0 auto;
+		}
+			/* ul{
+				overflow: hidden;
+			}
+			li{
+				float: left;
+				line-height: 41px;
+				margin-right: 31px;
+				font-size: 16px;
+				color:#333333;
+				cursor:pointer;
+			} */
+		.main{
+			width: 100%;
+		}
+		.main-top{
+			width: 100%;
+			background-color: #fff;
+			border:1px solid #e0e0e0;
+			height: 40px;
+			display: flex;
+		}
+		.main-top .top-left{
+			width: 48%;
+			height: 100%;
+			flex: 1;
+		}
+		.main-top .top-right{
+			flex: 1;
+			width: 48%;
+			height: 100%;
+
+		}
+		input{
+			width: 12px;
+			height: 12px;
+			margin-left: 11px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-right: 9px;
+			float: left;
+		}
+		.main-top  p{
+			float: left;
+			line-height:42px;
+			font-size: 12px;
+		}
+		.main-top>p:nth-child(2){
+			margin-right: 20%;
+		}
+		.main-top ul{
+			float:right ;
+			z-index: 999;
+			width: 50%;
+			height: 100%;
+			margin-right: 65px;
+		}
+		.main-top ul li{
+			float: right;
+			font-size: 12px;
+			margin-right: 15%;
+			line-height: 40px;
+
+		}
+		#store{
+			width: 100%;
+			border:1px solid #e0e0e0;
+		}
+		.store-top{
+			width:100%;
+			border-bottom: 2px solid #F2F2F2;
+			background: #F2F2F2;
+			overflow: hidden;
+		}
+		.store-top p{
+		float: left;
+			font-size: 12px;
+			line-height: 40px;
+		}
+		.store-top img{
+			margin-top: 13px;
+			margin-left: 10px;
+		}
+		.store-top>p:nth-child(4){
+			float: right;
+		}
+		.store-bottom{
+			background-color: #fff4e8;
+			width: 100;
+			overflow: hidden;
+		}
+		.s-b-left{
+			width: 50%;
+			float: left;
+			overflow: hidden;
+		}
+		.s-b-left img{
+			float: left;
+			margin-left: 18px;
+			margin-right: 10px;
+			margin-top: 15px;
+			margin-bottom: 21px;
+			border: 1px solid #eeeeee;
+		}
+		.s-b-left p{
+			margin-top: 19px;
+			line-height: 15px;
+			float: left;
+			font-size: 12px;
+		}
+		.s-b-left>p:nth-child(4){
+			color:#666666;
+			margin-left: 10px;
+		}
+		.s-b-right{
+			float: right;
+			width: 49%;
+			height: 100%;
+			padding-top: 15px;
+		}
+		.s-b-right>span:nth-child(1){
+			margin-left: 27px;
+			float: left;
+		}
+		.s-b-right>span:nth-child(2){
+			float: left;
+			margin-right: 41px;
+
+		}
+		.s-b-right .list{
+			width: 78px;
+			float: left;
+			margin-right: 42px;
+			border: 1px solid #cacbcb;
+		}
+		.s-b-right .list li{
+			
+			line-height: 20px;
+			float: left;
+			margin: 0;
+			width: 16px;
+			text-align: center;
+		}
+		.s-b-right .list>li:nth-child(2){
+			width: 44px;
+			border-left: 1px solid  #cacbcb;
+			border-right: 1px solid  #cacbcb;
+		}
+		.s-b-right>span:nth-child(3){
+			font-weight: bold;
+		}
+		.s-b-right>span:nth-child(4){
+			font-weight: bold;
+		}
+		.s-b-right>ul:nth-child(6){
+			float: right;
+			margin-right: 17px;
+		}
+		.s-b-right>ul:nth-child(6) li{
+			clear: both;
+			font-size: 12px;
+			line-height: 12px;
+			margin-bottom: 8px;
+		}
+		.footer3{
+			width: 100%;
+			border: 1px solid #f0f0f0;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			overflow: hidden;
+			position: relative;
+		}
+		.footer-left{
+			width: 330px;
+			float: left;
+			padding-top: 19px;
+			padding-bottom: 19px;
+		}
+		.footer-left li{
+			color:#666666;
+			font-size: 12px;
+			margin-left: 11px;
+			margin-right: 0;
+		}
+		.footer-right{
+			width: 420px;
+			float: right;
+			padding-top: 19px;
+			overflow: hidden;
+		}
+		.footer-right span{
+			color:#e4393c;
+			font-weight: bolder;
+			margin-left: 4px;
+			margin-right: 4px;
+		}
+		.footer-right div{
+			width: 200px;
+			margin-left: 14px;
+			float: left;
+		}
+		.footer-right div>p{
+			line-height: 24px;
+			
+		}
+		.footer-right div>p{
+			margin-left: 11px;
+		}
+		.footer-right div p>span{
+			font-size: 20px;
+		}
+		.footer-right div img{
+			margin-left: 9px;
+		}
+		.footer3 a{
+			display: block;
+			text-decoration: none;
+			width: 96px;
+			line-height: 80px;
+			text-align: center;
+			background-color:#e64346;
+			font-size: 19px;
+			color:#fffefe;
+			position: absolute;
+			right:0;
+		}

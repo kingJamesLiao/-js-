@@ -1,0 +1,375 @@
+
+
+/*购物车*/
+.cart {
+    background-color: #F9F9F9;
+}
+
+.cartHeader {
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.cartHeader .strip {
+    margin-top: 30px;
+    height: 5px;
+    flex: 1;
+    background: #C9C9C9;
+    color: #C9C9C9;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 600;
+
+}
+
+.cartHeader .strip a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: -5px auto;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    cursor: pointer;
+    background: #C9C9C9;
+}
+
+.cartHeader .cur {
+    color: #F38420;
+}
+
+.cartHeader .cur,
+.cartHeader .cur>a {
+    background: #F38420;
+}
+
+.cartCenter {
+    width: 100%;
+
+}
+
+.cartCenter .main {
+    width: 100%;
+}
+
+.cartCenter .main .main-top {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    height: 40px;
+    display: flex;
+    
+}
+
+.cartCenter .main .main-top .top-left {
+    height: 100%;
+    flex: 1;
+    display: flex;
+}
+
+.cartCenter .main .main-top .top-right {
+    flex: 1;
+    height: 100%;
+    display: flex;
+
+
+}
+
+.cartCenter .main input {
+    width: 20px;
+    height: 12px;
+    margin-left: 11px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 9px;
+    float: left;
+}
+
+.cartCenter .main .main-top p {
+    flex: 7;
+    line-height: 40px;
+    font-size: 12px;
+
+}
+
+.cartCenter .main .main-top p:nth-child(2) {
+    flex: 3;
+}
+
+.cartCenter .main .main-top>p:nth-child(2) {
+    width: 100%;
+}
+
+.cartCenter .main .main-top ul {
+    flex: 1;
+
+}
+
+.cartCenter .main .main-top ul li {
+    float: left;
+    width: 25%;
+    font-size: 12px;
+    line-height: 40px;
+
+}
+
+.cartCenter .main .store {
+    width: 100%;
+    line-height: 18px;
+    border: 1px solid #e0e0e0;
+}
+
+.cartCenter .main .store-top p {
+    float: left;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.cartCenter .main .store-top img {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.cartCenter .main .store-bottom{
+    background-color: #fff;
+    width: 100%;
+    height: 120px;
+    border-top: 1px #eee solid;
+    overflow: hidden;
+}
+.cartCenter .main .store-bottom .s-b-left{
+    width: 47%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    display: flex;
+}
+.cartCenter .main .store-bottom .s-b-left img{
+    float: left;
+    width: 80px;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 21px;
+    border: 1px solid #eeeeee;
+}
+.cartCenter .main .store-bottom .s-b-left .tle{
+    float: left;
+    height: 120px;
+    padding: 0 20px;
+    font-size: 12px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.cartCenter .main .store-bottom .s-b-left .tle p:nth-child(1){
+    color: #F38420;
+    padding-top: 20px;
+    font-size: 10px;
+}
+.s-b-right{
+    float: right;
+    width: 53%;
+    height: 100%;
+    display: flex;
+}
+.s-b-right .box1,
+.s-b-right .box2,
+.s-b-right .box3,
+.s-b-right .box4{
+    flex:1;
+    margin: auto;
+    text-align: center;
+}
+.s-b-right>span:nth-child(1){
+    margin-left: 17px;
+    float: left;
+    margin-top: 25px;
+    
+}
+.s-b-right>span:nth-child(2){
+    float: left;
+    margin-right: 41px;
+    margin-top: 25px;
+}
+.s-b-right .list{
+    width: 78px;
+    float: left;
+    border: 1px solid #eeeeee;;
+
+}
+.s-b-right .money{
+    margin-top: 25px;
+}
+.s-b-right .list li{
+    
+    line-height: 20px;
+    float: left;
+    margin: 0;
+    width: 16px;
+    text-align: center;
+    
+}
+.s-b-right .list>li:nth-child(2){
+    width: 44px;
+    border-left: 1px solid  #cacbcb;
+    border-right: 1px solid  #cacbcb;
+    
+}
+.s-b-right>span:nth-child(3){
+    font-weight: bold;
+}
+.s-b-right>span:nth-child(4){
+    height: 100%;
+    font-weight: bold;
+    padding-top: 20px;
+    line-height: 75px;
+    
+}
+.s-b-right>ul:nth-child(6){
+    float: right;
+    width: 25%;
+    height: 120px;
+
+}
+.s-b-right .box3,
+.s-b-right .box4{
+    border-left:  1px solid  #eeeeee;
+    height: 100%;
+    position: relative;
+    padding-top: 48px;
+    text-align: center;
+}
+.s-b-right .box4 img{
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 40px;
+    cursor: pointer;
+}
+
+.footer3{
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    overflow: hidden;
+    background: #F2F2F2;
+    position: relative;
+}
+.footer-left{
+    width: 330px;
+    float: left;
+    padding-top: 19px;
+}
+.footer3 .footer-left input{
+    margin-top: 1px;
+}
+.footer-left li{
+    color:#666666;
+    font-size: 10px;
+    margin-left: 11px;
+    color: #666;
+    margin-right: 0;
+}
+.footer-right{
+    width: 420px;
+    float: right;
+    padding-top: 19px;
+    overflow: hidden;
+}
+.footer-right span{
+    color:#e4393c;
+    font-weight: bolder;
+    margin-left: 4px;
+    margin-right: 4px;
+    
+}
+.footer-right div{
+    width: 200px;
+    margin-left: 14px;
+    float: left;
+}
+.footer-right div>p{
+    line-height: 24px;
+    
+}
+.footer-right div>p{
+    margin-left: 11px;
+}
+.footer-right div p>span{
+    font-size: 20px;
+}
+.footer-right div img{
+    margin-left: 9px;
+}
+.footer3 a{
+    display: block;
+    text-decoration: none;
+    width: 48px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 2px;
+    text-align: center;
+    background-color:#F38420;
+    font-size: 8px;
+    color:#fffefe;
+    position: absolute;
+    top: 20px;
+    right:20px;
+}
+/*暂无商品*/
+.notCommo{
+    width: 100%;
+    height: 350px;
+    border: 1px solid #f0f0f0;
+    overflow: hidden;
+    background: #FFF4E8;
+    position: relative;
+    display: none;
+}
+.notCommo> .top{
+    width: 320px;
+    height: 320px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.notCommo> .top img{
+    width: 100%;
+    height: 100%;
+    margin-top: -50px;
+}
+.notCommo>div:nth-child(2){
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    position: absolute;
+    top: 200px;
+}
+.notCommo>div:nth-child(2) p{
+    font-size: 16px;
+    text-align: center;
+    letter-spacing:6px;
+    color: #999;
+    
+}
+.notCommo>div:nth-child(3){
+    width: 130px;
+    height: 38px;
+    border-radius: 50px;
+    background-color: #E75841;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+    font-size: 18px;
+}

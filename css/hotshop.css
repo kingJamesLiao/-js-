@@ -1,0 +1,87 @@
+.hotShop{
+    max-width: 1200px;
+    min-width: 970px;
+    height: 260px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+}
+.hotShop .hotleft{
+    width: 55px;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(250, 180, 174) ,  #F31917);
+    
+}
+.hotShop .hotleft h1{
+    color: #fff;
+    font-size: 24px;
+    width: 260px;
+    height: 55px;
+    transform:rotate(-90deg);
+    position: absolute;
+    left: -90px;
+    top: 20px;
+}
+.hotShop .hotright{
+    flex: 1;
+    background: #fff;
+    /* padding: 20px 0; */
+    display: flex;
+}
+.hotShop .hotright .box{
+    width: 120px;
+    height: 100%;
+    margin-right: 20px;
+    background-color: #28292C;
+    padding: 0;
+}
+.hotShop .hotright .goods{
+    padding: 20px 0;
+    width: 150px;
+    height: 100%;
+    margin-right: 17px;
+    overflow: hidden;
+    
+}
+.hotShop .hotright .goods .goodsImg{
+    width: 150px;
+    height: 140px;
+    background-color: #28292C;
+}
+.hotShop .hotright .goods .goodsImg img{
+    width: 100%;
+    height: 100%;
+}
+.hotShop .hotright .goods p{
+    font-size: 16px;
+    line-height:20px;
+    word-wrap:break-word;
+    height: 40px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+.hotShop .hotright .goods .pay{
+    width: 100%;
+    height: 38px;
+    background-color: #FFD839;
+    color: #EF5632;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    line-height: 38px;
+}
+/* @media screen and (max-width:970px){
+     .cur{
+        display: none;
+    }
+}
+@media screen and (min-width:970px) and (max-width:1200px){
+    .hotShop .hotleft{
+        display: none;
+    }
+} */

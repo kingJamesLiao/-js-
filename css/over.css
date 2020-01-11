@@ -1,0 +1,49 @@
+
+.listRight,
+.cart {
+    flex: 7;
+    margin-top: 40px;
+    min-height: 692px;
+    background-color: #F9F9F9;
+}
+.listRight .over{
+    width: 99%;
+    height: 170px;
+    border: rgb(253, 229, 204) solid 1px;
+    background: #FFF4E8;
+    margin: 20px 5px;
+    display: flex;
+}
+.listRight .over .over_left{
+    flex: 2;
+    position: relative;
+    margin-right: 15px;
+}
+.listRight .over .over_left>div{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2px;
+}
+.listRight .over .over_left>div img{
+    width: 100%;
+    height: 100%;
+}
+.listRight .over .over_right{
+    flex: 7;
+    padding-left: 5px;
+}
+.listRight .over .over_right h1{
+    font-size: 30px;
+    padding-top: 47px;
+}
+.listRight .over .over_right p{
+    font-size: 13px;
+    padding-top: 5px;
+}
+.listRight .over .over_right p span{
+    color: rgb(250, 153, 67);
+    font-weight: 600;
+}

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>三级商品页面</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/headfooter.css">
+    <link rel="stylesheet" href="../css/thirdIndex.css">
+    <link rel="stylesheet" href="../css/register.css">
+
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 头部导航条 -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- logo和折叠按钮 -->
+            <div class="navbar-header">
+                 <div class="slogan">
+                    <span>首页&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>联系我们</span>
+                    <div class="hint">
+                        <ul>
+                            <li>电话 : 010-882161623</li>
+                            <li>地址 : 广州市越秀区花柱官方混合双打时间54564654654</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-right">
+                <!-- 折叠按钮 -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- 缩小之后会被折叠的元素 -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul>
+                        <li>
+                            <a href="" data-toggle="modal" id="login" data-target="#myModal">登陆</a>
+                        </li>
+                        <li>
+                            <a href="" data-toggle="modal" data-target="#myModal2">注册</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="container-fluid">
+                <div class="head col-lg-10  col-md-10  col-sm-10 ">
+                    <h1><a href="../index.html">XMM</a></h1>
+                    <div class="head-input">
+                        <span class="cur">站内</span>
+                        <span>站外</span>
+                        <input type="text" placeholder="请输入内容">
+                        <a href=""><img src="../images/sousuo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="store">
+                    <a href="./shoppCart.html">
+                        <img src="../images/store.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- 登录模态框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="register">
+            <div class="mains">
+                <div class="registerHead">
+                    XMM
+                    <span>用户登录</span>
+                </div>
+                <div class="registerCenter">
+                    <div class="registerTle loginTle">
+                        <span></span>
+                        <span></span>
+                        <div class="regFont passFont loginFont">
+                            <h1>STEP&nbsp;03</h1>
+                            <p>●&nbsp;密码最少6位最多20位</p>
+                            <p>●&nbsp;密码只能是英文大写/小写/数字</p>
+                            <p>●&nbsp;请妥善保管您的密码</p>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <h1>用户登录</h1>
+                        <div class="type">+66&nbsp;|&nbsp;<input id="phone" type="text" placeholder="请输入手机号"></div>
+                        <div class="type"><input type="text" id="pass" placeholder="请输入密码"></div>
+                        <div class="back passBack">
+                            <input id="loginCheck" type="checkbox">我已阅读并同意<strong
+                                style="color: #F38420;">Vcanbuy用户条款</strong>,点击"登录"按钮即表示您
+                            已阅读并同意Vcanbuy用户条款。</div>
+                        <button id="loginBtn" class="regBtn">登录</button>
+                        <!-- onclick="location.href='list.html'" -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 注册模态框 -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role2="dialog" aria-labelledby="myModalLabel">
+        <div class="register" id="register">
+            <div class="mains">
+                <div class="registerHead">
+                    XMM
+                    <span>用户注册</span>
+                </div>
+                <div class="registerCenter">
+                    <div class="registerTle">
+                        <span></span>
+                        <span></span>
+                        <div class="regFont">
+                            <h1>STEP&nbsp;01</h1>
+                            <p>请使用未注册过的邮箱进行注册</p>
+                            <p>点击发送验证码并输入4位数字验证码</p>
+                            <p>验证码10分钟有效</p>
+                            <p>60秒后可对用一邮箱发送第二次验证码</p>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <h1>验证手机号</h1>
+                        <div class="type" id="verify">+66&nbsp;|&nbsp;<input type="text"
+                                placeholder="请输入手机号码"><span>发送验证码</span></div>
+                        <div class="type"><input class="code" type="text" placeholder="请输入4位数字验证码"></div>
+                        <button id="nextBtn"><a>下一步</a></button>
+                        <div class="back" id="backBtn"><span></span>已有账号,返回登录</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="register" id="setPassword" style="display: none;">
+            <div class="main">
+                <div class="registerHead">
+                    XMM
+                    <span>用户注册</span>
+                </div>
+                <div class="registerCenter">
+                    <div class="registerTle">
+                        <span></span>
+                        <span></span>
+                        <div class="regFont passFont">
+                            <h1>STEP&nbsp;02</h1>
+                            <p>●&nbsp;密码最少6位最多20位</p>
+                            <p>●&nbsp;密码只能是英文大写/小写/数字</p>
+                            <p>●&nbsp;请妥善保管您的密码</p>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <h1>设置密码</h1>
+                        <p>手机号:66-0958803575</p>
+                        <div class="type"><input type="text" placeholder="请输入密码"></div>
+                        <div class="type"><input type="text" placeholder="请再次输入密码"></div>
+                        <div class="back passBack">
+                            <input type="checkbox">我已阅读并同意<strong
+                                style="color: #F38420;">Vcanbuy用户条款</strong>,点击"注册"按钮即表示您
+                            已阅读并同意Vcanbuy用户条款。</div>
+                        <button class="regBtn">注册</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="mainTop">
+            <div class="container_left">
+                <div class="t_container">
+                    <div class="jqzoom">
+                        <img src="../images/image/big1.jpg" jqimg="../images/image/big1.jpg" />
+                    </div>
+                </div>
+                <div class="b_container">
+                    <div class="type left">&lt;</div>
+                    <div class="type right">&gt;</div>
+                    <img src="../images/image/big1.jpg" />
+                    <img src="../images/image/big2.jpg" />
+                    <img src="../images/image/big3.jpg" />
+                    <img src="../images/image/big4.jpg" />
+                    <img src="../images/image/big5.jpg" />
+                    <img src="../images/image/big3.jpg" />
+                    <img src="../images/image/big4.jpg" />
+                    <img src="../images/image/big5.jpg" />
+                </div>
+            </div>
+            <div class="container_right">
+                <h1>【年终盛典价】飞科电吹风机家用吹风筒宿舍用学生大功率静音无声发型师专用发廊 [交易快照]</h1>
+                <p>【年终盛典价】[price of year-end celebration] feike electric hair dryer for home blower dormitory with
+                    student high power, quiet and silent hair stylist's hair salon [trading snapshot]</p>
+                <div class="price">
+                    <div>
+                        <p>市场价:</p>
+                        <p> <del>￥24.00</del></p>
+                    </div>
+                    <div>
+                        <p>
+                            <p>价格</p>
+                            <p></p>
+                            <p>数量</p>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <span>￥17.00</span>
+                            <p class="cur small-font">优惠50%</p>
+                            <p>200~19999件</p>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <span>￥14.00</span>
+                            <p class="cur">优惠50%</p>
+                            <p>19999+件</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="color">
+                    <div>
+                        <p>颜色:</p>
+                        <p>Color</p>
+                    </div>
+                    <div class="colorCur"><img src="../images/image/1.jpg" alt=""></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <!-- <div>
+                        <span>黑色</span>
+                        <span>粉红色</span>
+                        <span class="colorCur">土豪黑金校园版</span>
+                    </div> -->
+                </div>
+                <div class="parcel">
+                    <div>
+                        <p>物流:</p>
+                        <p>Parcel</p>
+                    </div>
+                    <div>海运 (12~15天)</div>
+                    <div>陆运 (8~10天)</div>
+                </div>
+                <div class="size">
+                    <div>
+                        <p>尺码:</p>
+                        <p>Size</p>
+                    </div>
+                    <div class="sizeRight">
+                        <div>
+                            <div>4XL</div>
+                            <div>￥:20.00</div>
+                            <div>
+                                <span class="min">-</span>
+                                <input type="text" class="text_box" value="0">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>4XL</div>
+                            <div>￥:20.00</div>
+                            <div>
+                                <span class="min">-</span>
+                                <input type="text" class="text_box" value="0">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>3XL</div>
+                            <div>￥:20.00</div>
+                            <div>
+                                <span class="min">-</span>
+                                <input type="text" class="text_box" value="0">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>2XL</div>
+                            <div>￥:20.00</div>
+                            <div>
+                                <span class="min">-</span>
+                                <input type="text" class="text_box" value="0">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>XL</div>
+                            <div>￥:20.00</div>
+                            <div>
+                                <span class="min">-</span>
+                                <input type="text" class="text_box" value="0">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>L</div>
+                            <div>￥:20.00</div>
+                            <div>
+                                <span class="min">-</span>
+                                <input type="text" class="text_box" value="0">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>M</div>
+                            <div>￥:20.00</div>
+                            <div>
+                                <span class="min">-</span>
+                                <input type="text" class="text_box" value="0">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div></div>
+                    <div><a href="shoppCart.html">加入购物车</a></div>
+                    <div>立即购买</div>
+                    <div>发起拼单</div>
+                </div>
+            </div>
+        </div>
+        <div class="share">
+            <div class="sideo_store">
+                <div class="left"></div>
+                <div class="right">
+                    <p>xmm自营专卖店</p>
+                    <p><a href="" style="color: #444;">查看店铺</a></p>
+                </div>
+            </div>
+            <div class="sideo_right">
+                <div class="start">
+                    <div>
+                        <ul>
+                            <li>马马哈哈</li>
+                            <li>发起了拼单</li>
+                            <li>还差<span>1人</span></li>
+                            <li id="down"></li>
+                            <li>加入拼单</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>马马哈哈</li>
+                            <li>发起了拼单</li>
+                            <li>还差<span>1人</span></li>
+                            <li id="down2"></li>
+                            <li>加入拼单</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sort">
+            <h1>产品规格</h1>
+            <p>
+                <span>类别:电子</span>
+                <span>颜色:红/黑/蓝</span>
+                <span>颜色:红/黑/蓝</span>
+            </p>
+        </div>
+        <div class="mainBot">
+            <div class="detailTle">商品详情页</div>
+            <div class="detailPage"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a>服务协议</a></li>
+                <li><a>服务协议</a></li>
+                <li><a>服务协议</a></li>
+                <li><a>服务协议</a></li>
+                <li><a>服务协议</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../js/jquery-1.12.3.min.js"></script>
+    <script src="../js/jquery.jqzoom-2.2.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/lens.js"></script>
+    
+</body>
+
+</html>
